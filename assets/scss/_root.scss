@@ -1,27 +1,7 @@
 :root {
-    // --bg-body: #000000;
-    --bg-body-hero: linear-gradient(180deg, #152037 0%, #0C101A 100%);
-    --bg-body: #0C101A;
-
-    --color-hamburger-bar: #248936; // Cor das barras do hamburger
-    --bg-navbar-active: linear-gradient(180deg, #152037 0%, #0C101A 100%);
-    // Cor de fundo ativa da navbar
-    // --bg-navbar-active: #1B1D29; // Cor de fundo ativa da navbar
-
-
-    --green: #248936;
-    --white: #FFFFFF;
-    --black: #000000;
-    --gray: #ABB2A5;
-
-
-    --accordin-bg: linear-gradient(160deg, #0C101A 20%, #152037 100%);
-
-    --green-shadow: rgba(36, 137, 54, .5);
-    // --color-title-hero-section: rgba(255, 255, 255, 1);
-    // --color-text-hero-section: rgba(230, 230, 230, 1);
-
-    // --bg-btn: linear-gradient(87.36deg, #F0A647 9.47%, #BA4C0E 128.61%);
-    // --box-shadow-btn: 0px 20.3px 41.55px 0px rgba(186, 76, 14, 0.04);
-    // --color-btn: rgba(0, 0, 0, 1);
+    --dark: rgb(21, 21, 21);
+    --white: rgb(255, 255, 255);
+    --green: rgb(144, 255, 166);
+    --red: rgb(144, 0, 0);
+    --blue: rgb(28, 31, 45);
 }

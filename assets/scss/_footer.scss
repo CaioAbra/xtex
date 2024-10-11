@@ -2,18 +2,19 @@ footer {
     // background-image: url('./../../src/img/footer/img_footer.webp');
     // background-repeat: no-repeat;
     padding-top: 8.5rem;
+    background: var(--blue);
     // background-size: cover;
     // background-position-y: bottom;
     // background-position-x: right;
 
     @media screen and (min-width:1440px) {
-        padding-top: 21rem;
+        // padding-top: 21rem;
     }
 
 }
 
 footer p.direitos {
-    color: #95A9C7;
+    color: var(--green);
     font-size: 10px;
     margin-top: 1rem;
     line-height: 1rem;
@@ -41,14 +42,14 @@ footer ul li {
 footer ul li a {
     font-size: 14px;
     text-decoration: none;
-    fill: #95A9C7;
-    color: #95A9C7;
+    fill: var(--green);
+    color: var(--green);
     transition: all .5s;
 }
 
 footer ul li a:hover {
-    fill: var(--green);
-    color: var(--green);
+    fill: var(--white);
+    color: var(--white);
     transition: all .5s;
     text-decoration: none;
 }
@@ -86,5 +87,5 @@ footer ul li a.link-media-social:hover {
 footer .endPage {
     font-size: 14px;
     line-height: 24px;
-    color: #95A9C7;
+    color: var(--white);
 }

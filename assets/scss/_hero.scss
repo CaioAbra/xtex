@@ -1,0 +1,68 @@
+.hero-section {
+    background-color: var(--blue);
+    /* Fundo escuro conforme definido */
+    padding: 60px 0;
+    position: relative;
+    background-image: url('src/img/fundo-grafico.png');
+    /* Se houver um fundo com gráfico */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--white);
+
+    .logo-hero {
+        max-width: 150px;
+        /* Ajustar o tamanho do logo */
+        margin-bottom: 20px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: var(--white);
+    }
+
+    .btn-danger {
+        background-color: var(--red);
+        /* Botão vermelho */
+        border: none;
+        padding: 15px 30px;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        height: auto;
+        // box-shadow: 0 0 50px rgba(0, 255, 0, 0.2);
+        /* Efeito de brilho ao redor */
+    }
+
+    @media (max-width: 768px) {
+        padding: 40px 0;
+
+        .hero-title {
+            font-size: 2rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+        }
+
+        .btn-danger {
+            font-size: 0.9rem;
+        }
+
+        .hero-image {
+            margin-top: 20px;
+        }
+    }
+}

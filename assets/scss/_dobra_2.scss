@@ -1,72 +1,88 @@
-section.dobra_2 {
-    margin-top: 6rem;
+.investment-section {
+    background-color: var(--blue);
+    color: var(--white);
+    // padding: 60px 0;
 
-    @media screen and (min-width:1024px) {
-        margin-top: 4rem;
+    /* Faixa verde do carousel */
+    .carousel-section {
+        background-color: var(--green);
+        padding: 10px 0;
 
+        .carousel-wrapper {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .carousel-track {
+            display: inline-block;
+            animation: scroll 15s linear infinite;
+        }
+
+        .carousel-logo {
+            display: inline-block;
+            padding: 0 15px;
+            height: 40px;
+            vertical-align: middle;
+        }
     }
 
-    h2 {
+    .section-title {
+        font-size: 2.5rem;
         color: var(--white);
-        margin-bottom: 3rem;
-        font-size: 38px;
+        margin-bottom: 40px;
 
-        @media screen and (max-width:500px) {
-            font-size: 28px;
-            line-height: 38px;
+        .highlight {
+            color: var(--green);
         }
     }
 
+    .features-section {
+        margin-bottom: 50px;
 
-    .card {
-        background: linear-gradient(180deg, #162038, #0C101A);
-        padding: 48px 32px;
-        border-radius: 24px;
-        border: none;
+        .feature-box {
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid var(--green);
+            border-radius: 8px;
+            text-align: left;
 
-        .card-body {
-            padding: 0;
-        }
+            h3 {
+                margin-top: 15px;
+                font-size: 1.5rem;
+                color: var(--green);
+            }
 
-        .card-title {
-            color: var(--white);
-            margin-top: 1rem;
-            font-size: 26px;
-        }
+            p {
+                margin-top: 10px;
+                font-size: 1rem;
+                color: var(--white);
+            }
 
-        .card-text {
-            color: #95A9C7;
-            font-size: 14px;
-        }
-
-        @media screen and (min-width:768px) {
-            min-height: 330px;
-        }
-
-        @media screen and (min-width:1024px) {
-            min-height: 350px;
+            .feature-icon {
+                max-width: 50px;
+                height: auto;
+            }
         }
     }
 
-    a.btn.acount {
-        // background: var(--bg-btn);
-        // box-shadow: var(--box-shadow-btn);
-        color: var(--white);
-        border: 1px solid var(--green);
-        background: var(--green);
-        box-shadow: 0px 7px 48.92px 1px var(--green-shadow);
-        // font-family: Good Timing;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 23.4px;
-        text-align: center;
-        border-radius: 7.24px;
-        padding: 16px 10px;
-        transition: all .5s ease;
-        width: 100%;
+    .highlight {
+        color: var(--green);
+    }
 
-        &:hover {
-            transform: scale(1.1);
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .feature-box {
+            h3 {
+                font-size: 1.3rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
         }
     }
 }
