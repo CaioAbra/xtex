@@ -52,3 +52,15 @@ body {
     opacity: 1;
     visibility: visible;
 }
+
+.faixa-demo{
+    margin-top: 2rem;
+    background-color: var(--dark);
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    a.btn{
+        margin-top: 0;
+    }
+}
