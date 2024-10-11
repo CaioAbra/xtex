@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Epilogue-Bold;
+    src: url('./../fonts/Epilogue-Bold.ttf');
+}
+
+@font-face {
+    font-family: Epilogue-Regular;
+    src: url('./../fonts/Epilogue-Regular.ttf');
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url('./../fonts/Inter_18pt-Regular.ttf');
+}
+@font-face {
+    font-family: Inter-Bold;
+    src: url('./../fonts/Inter_18pt-Bold.ttf');
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter-Bold';
+    // font-family: 'Epilogue-Bold';
+}
+
+
+p,
+span,
+li,
+ul,
+.btn,
+a {
+    font-family: 'Inter-Regular';
+    // font-family: 'Epilogue-Regular';
+}

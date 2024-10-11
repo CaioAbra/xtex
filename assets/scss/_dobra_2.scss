@@ -1,0 +1,72 @@
+section.dobra_2 {
+    margin-top: 6rem;
+
+    @media screen and (min-width:1024px) {
+        margin-top: 4rem;
+
+    }
+
+    h2 {
+        color: var(--white);
+        margin-bottom: 3rem;
+        font-size: 38px;
+
+        @media screen and (max-width:500px) {
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
+
+
+    .card {
+        background: linear-gradient(180deg, #162038, #0C101A);
+        padding: 48px 32px;
+        border-radius: 24px;
+        border: none;
+
+        .card-body {
+            padding: 0;
+        }
+
+        .card-title {
+            color: var(--white);
+            margin-top: 1rem;
+            font-size: 26px;
+        }
+
+        .card-text {
+            color: #95A9C7;
+            font-size: 14px;
+        }
+
+        @media screen and (min-width:768px) {
+            min-height: 330px;
+        }
+
+        @media screen and (min-width:1024px) {
+            min-height: 350px;
+        }
+    }
+
+    a.btn.acount {
+        // background: var(--bg-btn);
+        // box-shadow: var(--box-shadow-btn);
+        color: var(--white);
+        border: 1px solid var(--green);
+        background: var(--green);
+        box-shadow: 0px 7px 48.92px 1px var(--green-shadow);
+        // font-family: Good Timing;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23.4px;
+        text-align: center;
+        border-radius: 7.24px;
+        padding: 16px 10px;
+        transition: all .5s ease;
+        width: 100%;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

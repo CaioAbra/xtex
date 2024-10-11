@@ -1,0 +1,107 @@
+section.dobra_3 {
+    position: relative;
+    // min-height: 902px;
+    overflow-x: hidden;
+
+    margin-top: 6rem;
+
+    @media screen and (min-width:1024px) {
+        margin-top: 6rem;
+
+    }
+
+    @media screen and (max-width: 768px) {
+        min-height: 500px;
+    }
+
+    h2 {
+        color: var(--white);
+        font-size: 38px;
+        // position: absolute;
+        // top: 5%;
+        // left: 50%;
+        // transform: translateX(-50%);
+        // z-index: 2;
+
+        @media screen and (max-width: 500px) {
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
+
+    .imagem-container {
+        position: relative;
+        padding-top: 36%;
+
+        @media screen and (max-width:768px) {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media screen and (min-width:768px) {
+            padding-top: 10%;
+
+        }
+
+        @media screen and (min-width:1024px) {
+            // padding-top: 16%;
+
+        }
+
+        @media screen and (min-width:1366px) {
+            // padding-top: 20%;
+        }
+
+        .fundo {
+            width: 100%;
+            height: auto;
+
+            @media screen and (max-width:768px) {
+                max-width: none;
+                width: 50rem;
+
+            }
+        }
+
+        .icons {
+            position: absolute;
+            bottom: 41%;
+            right: -4%;
+            width: 35%;
+            height: auto;
+            animation: flutuar 3s ease-in-out infinite;
+
+
+            @media screen and (min-width:768px) {
+                bottom: 44%;
+                right: 19%;
+                width: 21%;
+            }
+
+            @media screen and (min-width:1024px) {
+                bottom: 40%;
+                right: 18%;
+                width: 22%;
+
+            }
+
+            @media screen and (min-width:1366px) {
+                // bottom: 22rem;
+                // right: 17rem;
+                // width: 18rem;
+            }
+
+            @keyframes flutuar {
+
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+}

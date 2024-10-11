@@ -1,0 +1,154 @@
+header#header {
+    height: 87px;
+    z-index: 1;
+
+    nav.navbar {
+        height: 100%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+
+        .navbar-brand {
+            z-index: 9999;
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: auto;
+            // margin-right: 1rem;
+
+            button.hamburger {
+                display: none;
+                flex-direction: column;
+                cursor: pointer;
+                border: none;
+                background: none;
+                padding: 0;
+                z-index: 10;
+
+                @media (max-width: 768px) {
+                    display: flex;
+                }
+
+
+                span.bar {
+                    height: 3px;
+                    width: 38px;
+                    background: var(--white);
+                    margin: 4px 0;
+                    transition: all 0.3s ease;
+                }
+
+                .bar:nth-child(1) {
+                    background: var(--green);
+                }
+            }
+
+            .nav-menu {
+                display: flex;
+                gap: 1.25rem;
+                // margin-top: 0rem !important;
+
+                @media screen and (max-width:768px) {
+                    margin-top: 1rem;
+                }
+
+                @media screen and (min-width:1024px) {
+                    margin-top: 0;
+                }
+
+                a.btn {
+                    padding: .625rem 3rem !important;
+                    // font-family: goodtiming;
+                    // height: 45px;
+                    align-content: center;
+                    font-size: 13px;
+                    font-weight: 700;
+                    text-align: center;
+                    margin: auto;
+                    border-style: solid;
+                    border-width: 2.17px;
+                    border-radius: 8.69px;
+
+                    @media screen and (max-width:768px) {
+                        // margin-left: auto;
+                        // margin-right: auto;
+                        // margin-bottom: 1rem;
+                        margin: 0 auto;
+
+                        &:nth-child(1) {
+                            margin-top: 12rem;
+                        }
+                    }
+                }
+
+                .btn-login {
+                    background: transparent;
+                    border-color: none;
+                    color: var(--white);
+                    // border: 1px solid var(--green);
+                    width: 215.81px;
+                    text-transform: uppercase;
+
+                }
+
+                .btn-register {
+                    background: var(--green);
+                    box-shadow: 0px 7px 48.92px 1px var(--green-shadow);
+                    padding: 1.125rem 3rem;
+                    opacity: 1;
+                    color: var(--white);
+                    border: 1px solid var(--green);
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        &.active {
+            background: var(--bg-navbar-active);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        // height: 87px;
+        align-content: center;
+    }
+}
+
+// Ajustes para mobile
+@media (max-width: 768px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh; // Faz com que o menu ocupe toda a altura da tela
+        position: fixed; // Fixa a posição do menu para ocupar toda a tela
+        top: 0;
+        left: 0;
+        background: var(--bg-navbar-active);
+        z-index: 5;
+        opacity: 0;
+        transform: translateX(100%); // Move o menu para cima (fora da tela)
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        backdrop-filter: blur(10px);
+        border-bottom: solid 2px var(--color-accordion-header-open);
+    }
+
+    .nav-menu.active {
+        opacity: 1;
+        transform: translateX(0); // Move o menu para sua posição original, preenchendo a tela
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(10px, -10px);
+    }
+}
