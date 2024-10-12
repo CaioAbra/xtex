@@ -29,7 +29,7 @@
         p {
             font-size: 1rem;
             color: var(--white);
-            padding: 10px;
+            padding: 5px;
             line-height: 1.6;
             border: 1px solid var(--green);
             /* Borda verde */
@@ -37,14 +37,6 @@
         }
     }
 
-    /* Chamada para Ação */
-    .btn-danger {
-        background-color: var(--red);
-        border: none;
-        padding: 15px 30px;
-        font-size: 1.2rem;
-        margin-top: 40px;
-    }
 
     /* Responsividade */
     @media (max-width: 768px) {
@@ -61,3 +53,16 @@
         }
     }
 }
+
+    /* Chamada para Ação */
+    .faixa-acao{
+        background-color: var(--green);
+        margin-top: 40px;
+        padding: 30px;
+        .btn-danger {
+            background-color: var(--red);
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+        }
+    }

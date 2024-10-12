@@ -1,5 +1,7 @@
 .features-section {
     background-image: url(../../src/img/dobra_2/bg-3.png) !important;
+    background-size: 20%;
+    background-repeat: repeat;
     background-color: var(--blue);
     color: var(--white);
     // padding: 60px 0;
@@ -7,7 +9,6 @@
 
     .feature-box {
         // text-align: center;
-        border: 1px solid var(--green);
         /* Borda verde ao redor */
         border-radius: 10px;
         /* Canto arredondado */

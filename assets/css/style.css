@@ -391,6 +391,7 @@ section#hero-section lottie-player path {
 
 .investment-section {
   background-image: url(../../src/img/dobra_2/bg-3.png) !important;
+  background-size: 20%;
   background-repeat: repeat;
   background-color: var(--blue);
   color: var(--white);
@@ -476,6 +477,8 @@ section#hero-section lottie-player path {
 
 .features-section {
   background-image: url(../../src/img/dobra_2/bg-3.png) !important;
+  background-size: 20%;
+  background-repeat: repeat;
   background-color: var(--blue);
   color: var(--white);
   padding-top: 60px;
@@ -483,7 +486,6 @@ section#hero-section lottie-player path {
   /* Responsividade */
 }
 .features-section .feature-box {
-  border: 1px solid var(--green);
   /* Borda verde ao redor */
   border-radius: 10px;
   /* Canto arredondado */
@@ -532,6 +534,9 @@ section#hero-section lottie-player path {
 }
 
 .steps-section {
+  background-image: url(../../src/img/dobra_2/bg-3.png) !important;
+  background-size: 20%;
+  background-repeat: repeat;
   background-color: var(--blue);
   color: var(--white);
   padding-top: 60px;
@@ -539,7 +544,7 @@ section#hero-section lottie-player path {
   /* Responsividade */
 }
 .steps-section .phone-image {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   margin-bottom: 20px;
   position: relative;
@@ -597,7 +602,6 @@ section#hero-section lottie-player path {
   background-color: var(--blue);
   color: var(--white);
   padding-top: 60px;
-  /* Chamada para Ação */
   /* Responsividade */
 }
 .testimonials-section .highlight {
@@ -622,18 +626,11 @@ section#hero-section lottie-player path {
 .testimonials-section .testimonial-box p {
   font-size: 1rem;
   color: var(--white);
-  padding: 10px;
+  padding: 5px;
   line-height: 1.6;
   border: 1px solid var(--green);
   /* Borda verde */
   border-radius: 8px;
-}
-.testimonials-section .btn-danger {
-  background-color: var(--red);
-  border: none;
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  margin-top: 40px;
 }
 @media (max-width: 768px) {
   .testimonials-section .testimonial-box {
@@ -647,6 +644,19 @@ section#hero-section lottie-player path {
   }
 }
 
+/* Chamada para Ação */
+.faixa-acao {
+  background-color: var(--green);
+  margin-top: 40px;
+  padding: 30px;
+}
+.faixa-acao .btn-danger {
+  background-color: var(--red);
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+}
+
 .faq-section {
   background-color: var(--blue);
   color: var(--white);
@@ -655,12 +665,18 @@ section#hero-section lottie-player path {
   /* Responsividade */
 }
 .faq-section .faq-title {
-  font-size: 2.5rem;
+  font-size: 7rem;
   margin-bottom: 40px;
-  color: var(--white);
+  color: var(--green);
 }
 .faq-section .faq-title .highlight {
+  display: block;
+  font-size: 4rem;
   color: var(--green);
+  margin-top: 0rem;
+}
+.faq-section .faq-title .highlight span {
+  color: var(--white);
 }
 .faq-section .card {
   background-color: var(--green);
@@ -702,7 +718,7 @@ section#hero-section lottie-player path {
 }
 
 footer {
-  padding-top: 8.5rem;
+  padding-top: 5rem;
   background: var(--blue);
 }
 footer p.direitos {
@@ -836,7 +852,7 @@ body {
   background-color: var(--dark);
   align-items: center;
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 .faixa-demo a.btn {
   margin-top: 0;
