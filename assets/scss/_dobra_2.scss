@@ -1,4 +1,6 @@
 .investment-section {
+    background-image: url(../../src/img/dobra_2/bg-3.png) !important;
+    background-repeat: repeat;
     background-color: var(--blue);
     color: var(--white);
     // padding: 60px 0;
@@ -6,7 +8,7 @@
     /* Faixa verde do carousel */
     .carousel-section {
         background-color: var(--green);
-        padding: 10px 0;
+        padding: 15px 0;
 
         .carousel-wrapper {
             overflow: hidden;
@@ -14,8 +16,20 @@
         }
 
         .carousel-track {
+            margin-top: 0.5rem;
             display: inline-block;
             animation: scroll 15s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(200%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+            
         }
 
         .carousel-logo {
@@ -29,7 +43,8 @@
     .section-title {
         font-size: 2.5rem;
         color: var(--white);
-        margin-bottom: 40px;
+        margin-top: 100px;
+        margin-bottom: 5px;
 
         .highlight {
             color: var(--green);
@@ -37,11 +52,12 @@
     }
 
     .features-section {
+        background: none !important;    
         margin-bottom: 50px;
-
         .feature-box {
             padding: 20px;
             margin-bottom: 30px;
+            background-color: #14161f;
             border: 1px solid var(--green);
             border-radius: 8px;
             text-align: left;

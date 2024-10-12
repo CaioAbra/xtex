@@ -4,7 +4,7 @@
   --white: rgb(255, 255, 255);
   --green: rgb(144, 255, 166);
   --red: rgb(144, 0, 0);
-  --blue: rgb(28, 31, 45);
+  --blue: #1c1f2d;
 }
 
 @font-face {
@@ -177,10 +177,9 @@ header#header nav.navbar.active {
   /* Fundo escuro conforme definido */
   padding: 60px 0;
   position: relative;
-  background-image: url("src/img/fundo-grafico.png");
+  background: url("../../src/img/dobra_1/bg-1.png");
   /* Se houver um fundo com gráfico */
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   color: var(--white);
 }
@@ -391,6 +390,8 @@ section#hero-section lottie-player path {
 }
 
 .investment-section {
+  background-image: url(../../src/img/dobra_2/bg-3.png) !important;
+  background-repeat: repeat;
   background-color: var(--blue);
   color: var(--white);
   /* Faixa verde do carousel */
@@ -398,15 +399,24 @@ section#hero-section lottie-player path {
 }
 .investment-section .carousel-section {
   background-color: var(--green);
-  padding: 10px 0;
+  padding: 15px 0;
 }
 .investment-section .carousel-section .carousel-wrapper {
   overflow: hidden;
   white-space: nowrap;
 }
 .investment-section .carousel-section .carousel-track {
+  margin-top: 0.5rem;
   display: inline-block;
   animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 .investment-section .carousel-section .carousel-logo {
   display: inline-block;
@@ -417,17 +427,20 @@ section#hero-section lottie-player path {
 .investment-section .section-title {
   font-size: 2.5rem;
   color: var(--white);
-  margin-bottom: 40px;
+  margin-top: 100px;
+  margin-bottom: 5px;
 }
 .investment-section .section-title .highlight {
   color: var(--green);
 }
 .investment-section .features-section {
+  background: none !important;
   margin-bottom: 50px;
 }
 .investment-section .features-section .feature-box {
   padding: 20px;
   margin-bottom: 30px;
+  background-color: #14161f;
   border: 1px solid var(--green);
   border-radius: 8px;
   text-align: left;
@@ -462,6 +475,7 @@ section#hero-section lottie-player path {
 }
 
 .features-section {
+  background-image: url(../../src/img/dobra_2/bg-3.png) !important;
   background-color: var(--blue);
   color: var(--white);
   padding-top: 60px;
