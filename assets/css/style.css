@@ -188,6 +188,13 @@ header#header nav.navbar.active {
   /* Ajustar o tamanho do logo */
   margin-bottom: 20px;
 }
+.hero-section .hero-impact {
+  display: flex;
+  gap: 0.5rem;
+  background-color: green;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
 .hero-section .hero-title {
   font-size: 2.5rem;
   font-weight: 700;
