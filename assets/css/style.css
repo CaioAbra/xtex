@@ -177,7 +177,7 @@ header#header nav.navbar.active {
   /* Fundo escuro conforme definido */
   padding: 60px 0;
   position: relative;
-  background: url("../../src/img/dobra_1/bg-1.png");
+  background: url("../../src/img/dobra_1/bg-1.webp");
   /* Se houver um fundo com gráfico */
   background-size: cover;
   background-repeat: no-repeat;
